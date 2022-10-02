@@ -26,7 +26,7 @@ const getAllStatistic=()=>{
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': "APIKEY",
+      'X-RapidAPI-Key': APIKEY,
       'X-RapidAPI-Host': 'covid-193.p.rapidapi.com'
     }
   };
@@ -56,7 +56,7 @@ const getCountryHistory=(country='Indonesia', day=getDate())=>{
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': 'e737458cf6mshce79b005d30db83p1e6239jsnde3f260800c1',
+      'X-RapidAPI-Key': APIKEY,
       'X-RapidAPI-Host': 'covid-193.p.rapidapi.com'
     }
   };
