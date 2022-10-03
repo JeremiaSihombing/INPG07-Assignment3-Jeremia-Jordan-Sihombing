@@ -10,6 +10,7 @@ var COUNTRIES = [];
 
 const APIKEY = "" // diisi api key
 
+
 const getDate=()=>{
   const today = new Date();
   const yyyy = today.getFullYear();
@@ -103,7 +104,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     
     document.getElementById("searchData").addEventListener("click", function(e){
       e.preventDefault()
-      const country = document.getElementById('country').value
+      const country = document.getElementById('country').value.toLowerCase().replace(document.getElementById('country').value.toLowerCase()[0], document.getElementById('country').value[0].toUpperCase())
       const date = document.getElementById('date').value
 
       if(!country){
@@ -125,4 +126,3 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
 
 });
-
