@@ -8,7 +8,7 @@ var totalTestsDOM;
 
 var COUNTRIES = [];
 
-const APIKEY = "" // diisi api key
+const APIKEY = "e737458cf6mshce79b005d30db83p1e6239jsnde3f260800c1" // diisi api key
 
 
 const getDate=()=>{
